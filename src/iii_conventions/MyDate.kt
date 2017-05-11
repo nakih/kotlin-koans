@@ -23,4 +23,4 @@ enum class TimeInterval {
     YEAR
 }
 
-class DateRange(val start: MyDate, val endInclusive: MyDate)
+class DateRange(override val start: MyDate, override val endInclusive: MyDate) : ClosedRange<MyDate>
